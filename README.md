@@ -6,7 +6,7 @@ use machine learning to  recognize gesture on raspberrypi
 分辨 "剪刀"、"石頭"、"布" 之手勢  
 再將訓練模型匯入 Raspberry pi  
 透過相機模組進行即時手勢判斷  
-
+ 
 
 ##  測試結果
 布 =>  紅燈 (上面那顆)  
