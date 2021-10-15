@@ -2,9 +2,7 @@
 use machine learning to  recognize gesture on raspberrypi
 
 ## 說明
-利用 tensorflow lite 訓練手部辨識模型
-分辨 "剪刀"、"石頭"、"布" 之手勢
-再將訓練模型匯入 Raspberry pi ，透過相機模組進行即時手勢判斷
+利用 tensorflow lite 訓練手部辨識模型，分辨 "剪刀"、"石頭"、"布" 之手勢，再將訓練模型匯入 Raspberry pi ，透過相機模組進行即時手勢判斷
 
 
 ##  測試結果
