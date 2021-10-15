@@ -1,5 +1,5 @@
 # Raspberrypi_Gesture-Recognition
-use machine learning to  recognize gesture on raspberrypi
+use machine learning to  recognize gesture on raspberrypi 
 
 ## 說明
 利用 tensorflow lite 訓練手部辨識模型  
