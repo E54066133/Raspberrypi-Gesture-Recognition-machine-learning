@@ -47,7 +47,7 @@ try:
             cv2.putText(image, label_text, (90, 40), cv2.FONT_HERSHEY_DUPLEX, 0.5, (0, 255, 255), 1, cv2.LINE_AA)   #將辨識的結果輸出在照片上
             cv2.putText(image, prob_text, (80, 60), cv2.FONT_HERSHEY_DUPLEX, 0.5, (0, 255, 255), 1, cv2.LINE_AA)    #將辨識的可信度輸出在照片上
 
-            if label_id == 0:
+            if label_id == 0:                                               #設根據辨識結果，設定對應的燈號亮
                 GPIO.output(paper, GPIO.HIGH)
                 GPIO.output(rock, GPIO.LOW)
                 GPIO.output(sciss0rs, GPIO.LOW)
@@ -61,13 +61,13 @@ try:
                 GPIO.output(sciss0rs, GPIO.HIGH)
 
             #show image
-            cv2.imshow('img', image)
+            cv2.imshow('img', image)                                        #輸出圖片至螢幕上
             
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            if cv2.waitKey(1) & 0xFF == ord('q'):                           #跳脫條件(按q)
                 break
-        cv2.destroyAllWindows()
+        cv2.destroyAllWindows()                                             #關掉所有視窗
 
 except KeyboardInterrupt:
     print("kb")
 finally:
-    GPIO.cleanup() #程式結束，記得釋放腳位
+    GPIO.cleanup()                                                          #程式結束，釋放腳位
