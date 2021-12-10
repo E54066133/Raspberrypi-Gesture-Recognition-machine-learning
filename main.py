@@ -8,7 +8,7 @@ import cv2
 from lite_lib import load_labels, set_input_tensor, classify_image
 import RPi.GPIO as GPIO
 
-paper = 8                      #設定燈泡腳位，其中紅色(8)是布，綠色(5)是石頭，黃色(3)是剪刀
+paper = 8                         #設定燈泡腳位，其中紅色(8)是布，綠色(5)是石頭，黃色(3)是剪刀
 rock = 5
 sciss0rs = 3
 GPIO.setmode(GPIO.BOARD)
