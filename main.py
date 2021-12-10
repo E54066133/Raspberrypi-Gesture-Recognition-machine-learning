@@ -3,7 +3,7 @@ import io
 import time
 import numpy as np
 from camera_pi import Camera
-from tflite_runtime.interpreter import Interpreter
+from tflite_runtime.interpreter import Interpreter         #匯入 tensorflow lite 訓練檔
 import cv2
 from lite_lib import load_labels, set_input_tensor, classify_image
 import RPi.GPIO as GPIO
